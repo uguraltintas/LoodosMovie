@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  LoodosMovie
+
+  Created by Uğur Altıntaş on 19.11.2024.
+  
+*/
+
+"invalid_url" = "Geçersiz URL.";
+"no_data" = "Sunucudan herhangi bir veri dönmedi.";
+"decoding_error" = "Veri çözümlenirken bir hata oluştu.";
+"server_error" = "Sunucu hatası: %@";
+"bad_request" = "Geçersiz İstek.";
+"unknown_error" = "Bilinmeyen bir hata oluştu.";

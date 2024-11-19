@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  LoodosMovie
+
+  Created by Uğur Altıntaş on 19.11.2024.
+  
+*/
+
+"invalid_url" = "The URL is invalid.";
+"no_data" = "No data was returned from the server.";
+"decoding_error" = "Failed to decode the data.";
+"server_error" = "Server error: %@";
+"bad_request" = "Bad Request.";
+"unknown_error" = "An unknown error occurred.";

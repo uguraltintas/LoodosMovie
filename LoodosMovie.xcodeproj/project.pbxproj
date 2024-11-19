@@ -10,34 +10,40 @@
 		F8AC07E22CEC92C8006FBB3E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E12CEC92C8006FBB3E /* FirebaseAnalytics */; };
 		F8AC07E42CEC92C8006FBB3E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E32CEC92C8006FBB3E /* FirebaseMessaging */; };
 		F8AC07E62CEC92C8006FBB3E /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E52CEC92C8006FBB3E /* FirebaseRemoteConfig */; };
-		F8AC07E92CEC93BC006FBB3E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E82CEC93BC006FBB3E /* Alamofire */; };
-		F8AC07EB2CEC93BC006FBB3E /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07EA2CEC93BC006FBB3E /* AlamofireDynamic */; };
+		F8AC08232CECA45C006FBB3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08142CECA45C006FBB3E /* AppDelegate.swift */; };
+		F8AC08242CECA45C006FBB3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08152CECA45C006FBB3E /* SceneDelegate.swift */; };
+		F8AC08252CECA45C006FBB3E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08172CECA45C006FBB3E /* String+Extensions.swift */; };
+		F8AC08262CECA45C006FBB3E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08192CECA45C006FBB3E /* NetworkError.swift */; };
+		F8AC08272CECA45C006FBB3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AC081C2CECA45C006FBB3E /* Assets.xcassets */; };
+		F8AC08292CECA45C006FBB3E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8AC08202CECA45C006FBB3E /* Localizable.strings */; };
+		F8AC082B2CECA4EA006FBB3E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC082A2CECA4EA006FBB3E /* Endpoint.swift */; };
+		F8AC082F2CECA9C2006FBB3E /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC082E2CECA9C2006FBB3E /* APIClient.swift */; };
+		F8AC08332CECBE88006FBB3E /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08322CECBE88006FBB3E /* Base.swift */; };
+		F8AC08352CECC995006FBB3E /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08342CECC995006FBB3E /* ErrorResponse.swift */; };
+		F8AC08372CECCC45006FBB3E /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08362CECCC45006FBB3E /* SearchRequest.swift */; };
+		F8AC083A2CECCE09006FBB3E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC08392CECCE09006FBB3E /* Alamofire */; };
+		F8AC083C2CECCFEF006FBB3E /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC083B2CECCFEF006FBB3E /* SearchResponse.swift */; };
+		F8AC086C2CECD5BE006FBB3E /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F8AC086B2CECD5BE006FBB3E /* Secrets.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F8AC07C82CEC8F91006FBB3E /* LoodosMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AC08142CECA45C006FBB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8AC08152CECA45C006FBB3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F8AC08172CECA45C006FBB3E /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		F8AC08192CECA45C006FBB3E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F8AC081C2CECA45C006FBB3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8AC081D2CECA45C006FBB3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8AC081E2CECA45C006FBB3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F8AC081F2CECA45C006FBB3E /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F8AC082A2CECA4EA006FBB3E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		F8AC082E2CECA9C2006FBB3E /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F8AC08322CECBE88006FBB3E /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		F8AC08342CECC995006FBB3E /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		F8AC08362CECCC45006FBB3E /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		F8AC083B2CECCFEF006FBB3E /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		F8AC086B2CECD5BE006FBB3E /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F8AC07DA2CEC8F92006FBB3E /* Exceptions for "LoodosMovie" folder in "LoodosMovie" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = F8AC07C72CEC8F91006FBB3E /* LoodosMovie */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F8AC07CA2CEC8F91006FBB3E /* LoodosMovie */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				F8AC07DA2CEC8F92006FBB3E /* Exceptions for "LoodosMovie" folder in "LoodosMovie" target */,
-			);
-			path = LoodosMovie;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F8AC07C52CEC8F91006FBB3E /* Frameworks */ = {
@@ -45,8 +51,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8AC07E62CEC92C8006FBB3E /* FirebaseRemoteConfig in Frameworks */,
-				F8AC07E92CEC93BC006FBB3E /* Alamofire in Frameworks */,
-				F8AC07EB2CEC93BC006FBB3E /* AlamofireDynamic in Frameworks */,
+				F8AC083A2CECCE09006FBB3E /* Alamofire in Frameworks */,
 				F8AC07E42CEC92C8006FBB3E /* FirebaseMessaging in Frameworks */,
 				F8AC07E22CEC92C8006FBB3E /* FirebaseAnalytics in Frameworks */,
 			);
@@ -58,7 +63,7 @@
 		F8AC07BF2CEC8F91006FBB3E = {
 			isa = PBXGroup;
 			children = (
-				F8AC07CA2CEC8F91006FBB3E /* LoodosMovie */,
+				F8AC08222CECA45C006FBB3E /* LoodosMovie */,
 				F8AC07C92CEC8F91006FBB3E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +74,91 @@
 				F8AC07C82CEC8F91006FBB3E /* LoodosMovie.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F8AC08162CECA45C006FBB3E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC08142CECA45C006FBB3E /* AppDelegate.swift */,
+				F8AC08152CECA45C006FBB3E /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F8AC08182CECA45C006FBB3E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC08172CECA45C006FBB3E /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8AC081A2CECA45C006FBB3E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC08302CECBE74006FBB3E /* Models */,
+				F8AC08312CECBE7A006FBB3E /* Requests */,
+				F8AC082A2CECA4EA006FBB3E /* Endpoint.swift */,
+				F8AC08192CECA45C006FBB3E /* NetworkError.swift */,
+				F8AC082E2CECA9C2006FBB3E /* APIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F8AC081B2CECA45C006FBB3E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F8AC08212CECA45C006FBB3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC081C2CECA45C006FBB3E /* Assets.xcassets */,
+				F8AC081D2CECA45C006FBB3E /* Info.plist */,
+				F8AC08202CECA45C006FBB3E /* Localizable.strings */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8AC08222CECA45C006FBB3E /* LoodosMovie */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC08162CECA45C006FBB3E /* Application */,
+				F8AC086A2CECD565006FBB3E /* Secrets */,
+				F8AC081A2CECA45C006FBB3E /* Network */,
+				F8AC08182CECA45C006FBB3E /* Extensions */,
+				F8AC081B2CECA45C006FBB3E /* Scenes */,
+				F8AC08212CECA45C006FBB3E /* Supporting Files */,
+			);
+			path = LoodosMovie;
+			sourceTree = "<group>";
+		};
+		F8AC08302CECBE74006FBB3E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC08322CECBE88006FBB3E /* Base.swift */,
+				F8AC08342CECC995006FBB3E /* ErrorResponse.swift */,
+				F8AC083B2CECCFEF006FBB3E /* SearchResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F8AC08312CECBE7A006FBB3E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC08362CECCC45006FBB3E /* SearchRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		F8AC086A2CECD565006FBB3E /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC086B2CECD5BE006FBB3E /* Secrets.xcconfig */,
+			);
+			path = Secrets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,16 +176,12 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				F8AC07CA2CEC8F91006FBB3E /* LoodosMovie */,
-			);
 			name = LoodosMovie;
 			packageProductDependencies = (
 				F8AC07E12CEC92C8006FBB3E /* FirebaseAnalytics */,
 				F8AC07E32CEC92C8006FBB3E /* FirebaseMessaging */,
 				F8AC07E52CEC92C8006FBB3E /* FirebaseRemoteConfig */,
-				F8AC07E82CEC93BC006FBB3E /* Alamofire */,
-				F8AC07EA2CEC93BC006FBB3E /* AlamofireDynamic */,
+				F8AC08392CECCE09006FBB3E /* Alamofire */,
 			);
 			productName = LoodosMovie;
 			productReference = F8AC07C82CEC8F91006FBB3E /* LoodosMovie.app */;
@@ -122,12 +208,13 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = F8AC07BF2CEC8F91006FBB3E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				F8AC07E02CEC92C8006FBB3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				F8AC07E72CEC93BC006FBB3E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F8AC08382CECCE09006FBB3E /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F8AC07C92CEC8F91006FBB3E /* Products */;
@@ -144,6 +231,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8AC08272CECA45C006FBB3E /* Assets.xcassets in Resources */,
+				F8AC08292CECA45C006FBB3E /* Localizable.strings in Resources */,
+				F8AC086C2CECD5BE006FBB3E /* Secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,14 +244,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8AC08232CECA45C006FBB3E /* AppDelegate.swift in Sources */,
+				F8AC082F2CECA9C2006FBB3E /* APIClient.swift in Sources */,
+				F8AC08242CECA45C006FBB3E /* SceneDelegate.swift in Sources */,
+				F8AC08252CECA45C006FBB3E /* String+Extensions.swift in Sources */,
+				F8AC08262CECA45C006FBB3E /* NetworkError.swift in Sources */,
+				F8AC08332CECBE88006FBB3E /* Base.swift in Sources */,
+				F8AC083C2CECCFEF006FBB3E /* SearchResponse.swift in Sources */,
+				F8AC082B2CECA4EA006FBB3E /* Endpoint.swift in Sources */,
+				F8AC08372CECCC45006FBB3E /* SearchRequest.swift in Sources */,
+				F8AC08352CECC995006FBB3E /* ErrorResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		F8AC08202CECA45C006FBB3E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8AC081E2CECA45C006FBB3E /* en */,
+				F8AC081F2CECA45C006FBB3E /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		F8AC07DC2CEC8F92006FBB3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8AC086B2CECD5BE006FBB3E /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -169,7 +282,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A5777VBC8M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoodosMovie/Info.plist;
+				INFOPLIST_FILE = "LoodosMovie/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -192,6 +305,7 @@
 		};
 		F8AC07DD2CEC8F92006FBB3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8AC086B2CECD5BE006FBB3E /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -199,7 +313,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A5777VBC8M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoodosMovie/Info.plist;
+				INFOPLIST_FILE = "LoodosMovie/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -225,6 +339,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -288,6 +403,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -371,7 +487,7 @@
 				minimumVersion = 11.5.0;
 			};
 		};
-		F8AC07E72CEC93BC006FBB3E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		F8AC08382CECCE09006FBB3E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -397,15 +513,10 @@
 			package = F8AC07E02CEC92C8006FBB3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseRemoteConfig;
 		};
-		F8AC07E82CEC93BC006FBB3E /* Alamofire */ = {
+		F8AC08392CECCE09006FBB3E /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F8AC07E72CEC93BC006FBB3E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = F8AC08382CECCE09006FBB3E /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		F8AC07EA2CEC93BC006FBB3E /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F8AC07E72CEC93BC006FBB3E /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
