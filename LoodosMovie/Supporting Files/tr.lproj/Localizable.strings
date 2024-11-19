@@ -12,3 +12,7 @@
 "server_error" = "Sunucu hatası: %@";
 "bad_request" = "Geçersiz İstek.";
 "unknown_error" = "Bilinmeyen bir hata oluştu.";
+
+// MARK: Splash
+"no_internet_title" = "İnternet Bağlantısı Yok";
+"no_internet_message" = "Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin.";
