@@ -10,6 +10,8 @@
 		F8AC07E22CEC92C8006FBB3E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E12CEC92C8006FBB3E /* FirebaseAnalytics */; };
 		F8AC07E42CEC92C8006FBB3E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E32CEC92C8006FBB3E /* FirebaseMessaging */; };
 		F8AC07E62CEC92C8006FBB3E /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E52CEC92C8006FBB3E /* FirebaseRemoteConfig */; };
+		F8AC07E92CEC93BC006FBB3E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E82CEC93BC006FBB3E /* Alamofire */; };
+		F8AC07EB2CEC93BC006FBB3E /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07EA2CEC93BC006FBB3E /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8AC07E62CEC92C8006FBB3E /* FirebaseRemoteConfig in Frameworks */,
+				F8AC07E92CEC93BC006FBB3E /* Alamofire in Frameworks */,
+				F8AC07EB2CEC93BC006FBB3E /* AlamofireDynamic in Frameworks */,
 				F8AC07E42CEC92C8006FBB3E /* FirebaseMessaging in Frameworks */,
 				F8AC07E22CEC92C8006FBB3E /* FirebaseAnalytics in Frameworks */,
 			);
@@ -90,6 +94,8 @@
 				F8AC07E12CEC92C8006FBB3E /* FirebaseAnalytics */,
 				F8AC07E32CEC92C8006FBB3E /* FirebaseMessaging */,
 				F8AC07E52CEC92C8006FBB3E /* FirebaseRemoteConfig */,
+				F8AC07E82CEC93BC006FBB3E /* Alamofire */,
+				F8AC07EA2CEC93BC006FBB3E /* AlamofireDynamic */,
 			);
 			productName = LoodosMovie;
 			productReference = F8AC07C82CEC8F91006FBB3E /* LoodosMovie.app */;
@@ -121,6 +127,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				F8AC07E02CEC92C8006FBB3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F8AC07E72CEC93BC006FBB3E /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F8AC07C92CEC8F91006FBB3E /* Products */;
@@ -364,6 +371,14 @@
 				minimumVersion = 11.5.0;
 			};
 		};
+		F8AC07E72CEC93BC006FBB3E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -381,6 +396,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F8AC07E02CEC92C8006FBB3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseRemoteConfig;
+		};
+		F8AC07E82CEC93BC006FBB3E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8AC07E72CEC93BC006FBB3E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F8AC07EA2CEC93BC006FBB3E /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8AC07E72CEC93BC006FBB3E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
