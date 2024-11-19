@@ -13,7 +13,9 @@
 "bad_request" = "Bad Request.";
 "unknown_error" = "An unknown error occurred.";
 
-
 // MARK: Splash
 "no_internet_title" = "No Internet Connection";
 "no_internet_message" = "Please check your internet connection and try again.";
+
+// Mark: Alert
+"retry" = "Retry";

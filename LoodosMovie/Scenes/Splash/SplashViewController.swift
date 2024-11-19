@@ -27,6 +27,10 @@ class SplashViewController: UIViewController {
         checkConnection()
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        viewModel.stopMonitoring()
+    }
+
     func setupUI() {
         view.backgroundColor = .loodosBlue
         view.addSubview(loodosLabel)
@@ -34,8 +38,13 @@ class SplashViewController: UIViewController {
     }
 
     func checkConnection() {
-        Task {
-            let isConnected = await viewModel.checkInternetConnection()
+        viewModel.checkInternetConnection { [weak self] isConnected in
+            if !isConnected {
+                self?.showAlert(title: "no_internet_title".localized,
+                                message: "no_internet_message".localized)
+                return
+            }
+            self?.loodosLabel.text = self?.viewModel.fetchRemoteConfigValue()
         }
     }
 }

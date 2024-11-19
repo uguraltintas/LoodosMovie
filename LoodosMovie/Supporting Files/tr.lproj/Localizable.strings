@@ -16,3 +16,6 @@
 // MARK: Splash
 "no_internet_title" = "İnternet Bağlantısı Yok";
 "no_internet_message" = "Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin.";
+
+// Mark: Alert
+"retry" = "Tekrar Dene";

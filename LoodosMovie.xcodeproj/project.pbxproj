@@ -27,6 +27,9 @@
 		F8AC089F2CECDD99006FBB3E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC089E2CECDD99006FBB3E /* SplashViewController.swift */; };
 		F8AC08A12CECE527006FBB3E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08A02CECE527006FBB3E /* UIView+Extensions.swift */; };
 		F8AC08A32CECE830006FBB3E /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08A22CECE830006FBB3E /* SplashViewModel.swift */; };
+		F8AC08A52CECECCD006FBB3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8AC08A42CECECCD006FBB3E /* GoogleService-Info.plist */; };
+		F8AC08AA2CECFB8A006FBB3E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08A92CECFB8A006FBB3E /* UIViewController+Extensions.swift */; };
+		F8AC08AD2CED0202006FBB3E /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08AC2CED0202006FBB3E /* NetworkMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		F8AC089E2CECDD99006FBB3E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		F8AC08A02CECE527006FBB3E /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		F8AC08A22CECE830006FBB3E /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		F8AC08A42CECECCD006FBB3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F8AC08A92CECFB8A006FBB3E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		F8AC08AC2CED0202006FBB3E /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 			children = (
 				F8AC08172CECA45C006FBB3E /* String+Extensions.swift */,
 				F8AC08A02CECE527006FBB3E /* UIView+Extensions.swift */,
+				F8AC08A92CECFB8A006FBB3E /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -126,6 +133,7 @@
 				F8AC081C2CECA45C006FBB3E /* Assets.xcassets */,
 				F8AC081D2CECA45C006FBB3E /* Info.plist */,
 				F8AC08202CECA45C006FBB3E /* Localizable.strings */,
+				F8AC08A42CECECCD006FBB3E /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -136,6 +144,7 @@
 				F8AC08162CECA45C006FBB3E /* Application */,
 				F8AC086A2CECD565006FBB3E /* Secrets */,
 				F8AC081A2CECA45C006FBB3E /* Network */,
+				F8AC08AB2CED01EE006FBB3E /* Helpers */,
 				F8AC08182CECA45C006FBB3E /* Extensions */,
 				F8AC081B2CECA45C006FBB3E /* Scenes */,
 				F8AC08212CECA45C006FBB3E /* Supporting Files */,
@@ -176,6 +185,14 @@
 				F8AC08A22CECE830006FBB3E /* SplashViewModel.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		F8AC08AB2CED01EE006FBB3E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC08AC2CED0202006FBB3E /* NetworkMonitor.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8AC08272CECA45C006FBB3E /* Assets.xcassets in Resources */,
+				F8AC08A52CECECCD006FBB3E /* GoogleService-Info.plist in Resources */,
 				F8AC08292CECA45C006FBB3E /* Localizable.strings in Resources */,
 				F8AC086C2CECD5BE006FBB3E /* Secrets.xcconfig in Resources */,
 			);
@@ -268,9 +286,11 @@
 				F8AC08262CECA45C006FBB3E /* NetworkError.swift in Sources */,
 				F8AC08332CECBE88006FBB3E /* Base.swift in Sources */,
 				F8AC08A12CECE527006FBB3E /* UIView+Extensions.swift in Sources */,
+				F8AC08AD2CED0202006FBB3E /* NetworkMonitor.swift in Sources */,
 				F8AC083C2CECCFEF006FBB3E /* SearchResponse.swift in Sources */,
 				F8AC08A32CECE830006FBB3E /* SplashViewModel.swift in Sources */,
 				F8AC082B2CECA4EA006FBB3E /* Endpoint.swift in Sources */,
+				F8AC08AA2CECFB8A006FBB3E /* UIViewController+Extensions.swift in Sources */,
 				F8AC08372CECCC45006FBB3E /* SearchRequest.swift in Sources */,
 				F8AC08352CECC995006FBB3E /* ErrorResponse.swift in Sources */,
 				F8AC089F2CECDD99006FBB3E /* SplashViewController.swift in Sources */,

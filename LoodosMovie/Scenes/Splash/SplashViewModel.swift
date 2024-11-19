@@ -7,17 +7,26 @@
 
 import Foundation
 import Network
+import FirebaseRemoteConfig
 
 final class SplashViewModel {
-    private let monitor = NWPathMonitor()
+    private let networkMonitor = NetworkMonitor()
 
-    func checkInternetConnection() async -> Bool {
-        return await withCheckedContinuation { continuation in
-            monitor.pathUpdateHandler = { path in
-                continuation.resume(returning: path.status == .satisfied)
-            }
-            let queue = DispatchQueue(label: "NetworkMonitor")
-            monitor.start(queue: queue)
-        }
+    func checkInternetConnection(completion: @escaping (Bool) -> Void) {
+        networkMonitor.onConnectionStatusChange = completion
+        startMonitoring()
+    }
+
+    func startMonitoring() {
+        networkMonitor.startMonitoring()
+    }
+
+    func stopMonitoring() {
+        networkMonitor.stopMonitoring()
+    }
+
+    func fetchRemoteConfigValue() -> String {
+        let remoteConfig = RemoteConfig.remoteConfig()
+        return remoteConfig.configValue(forKey: "loodosText").stringValue
     }
 }
