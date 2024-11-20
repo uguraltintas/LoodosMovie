@@ -9,37 +9,37 @@ import UIKit
 
 extension UIView {
     func anchor(top: NSLayoutYAxisAnchor? = nil,
-                left: NSLayoutXAxisAnchor? = nil,
+                leading: NSLayoutXAxisAnchor? = nil,
                 bottom: NSLayoutYAxisAnchor? = nil,
-                right: NSLayoutXAxisAnchor? = nil,
+                trailing: NSLayoutXAxisAnchor? = nil,
                 paddingTop: CGFloat = 0,
-                paddingLeft: CGFloat = 0,
+                paddingLeading: CGFloat = 0,
                 paddingBottom: CGFloat = 0,
-                paddingRight: CGFloat = 0,
+                paddingTrailing: CGFloat = 0,
                 width: CGFloat? = nil,
                 height: CGFloat? = nil) {
 
-        if let top = top {
+        if let top {
             topAnchor.constraint(equalTo: top, constant: paddingTop).isActive = true
         }
 
-        if let left = left {
-            leftAnchor.constraint(equalTo: left, constant: paddingLeft).isActive = true
+        if let leading {
+            leadingAnchor.constraint(equalTo: leading, constant: paddingLeading).isActive = true
         }
 
-        if let bottom = bottom {
+        if let bottom {
             bottomAnchor.constraint(equalTo: bottom, constant: -paddingBottom).isActive = true
         }
 
-        if let right = right {
-            rightAnchor.constraint(equalTo: right, constant: -paddingRight).isActive = true
+        if let trailing {
+            trailingAnchor.constraint(equalTo: trailing, constant: -paddingTrailing).isActive = true
         }
 
-        if let width = width {
+        if let width {
             widthAnchor.constraint(equalToConstant: width).isActive = true
         }
 
-        if let height = height {
+        if let height {
             heightAnchor.constraint(equalToConstant: height).isActive = true
         }
     }
@@ -63,7 +63,7 @@ extension UIView {
     }
 
     func addConstraintsToFillView(_ view: UIView) {
-        anchor(top: view.topAnchor, left: view.leftAnchor,
-               bottom: view.bottomAnchor, right: view.rightAnchor)
+        anchor(top: view.topAnchor, leading: view.leadingAnchor,
+               bottom: view.bottomAnchor, trailing: view.trailingAnchor)
     }
 }

@@ -8,8 +8,7 @@
 import UIKit
 
 class SplashViewController: UIViewController {
-    let viewModel = SplashViewModel()
-    private let loodosLabel: UILabel = {
+    private lazy var loodosLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = ""
@@ -18,17 +17,24 @@ class SplashViewController: UIViewController {
         return label
     }()
 
+    private var viewModel: SplashViewModelProtocol
+
+    init(viewModel: SplashViewModelProtocol) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        viewModel.delegate = self
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        checkConnection()
-    }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        viewModel.stopMonitoring()
+        viewModel.checkInternetConnection()
     }
 
     func setupUI() {
@@ -36,15 +42,35 @@ class SplashViewController: UIViewController {
         view.addSubview(loodosLabel)
         loodosLabel.center(inView: self.view)
     }
+}
 
-    func checkConnection() {
-        viewModel.checkInternetConnection { [weak self] isConnected in
-            if !isConnected {
-                self?.showAlert(title: "no_internet_title".localized,
-                                message: "no_internet_message".localized)
-                return
+extension SplashViewController: SplashViewModelDelegate {
+    func handleViewModelOutput(_ output: SplashViewModelOutput) {
+        switch output {
+        case .showText(let text):
+            DispatchQueue.main.async {
+                self.loodosLabel.text = text
             }
-            self?.loodosLabel.text = self?.viewModel.fetchRemoteConfigValue()
+        case .showAlert:
+            DispatchQueue.main.async {
+                self.showAlert(title: "no_internet_title".localized,
+                               message: "no_internet_message".localized)
+            }
+        case .dismissAlert:
+            DispatchQueue.main.async {
+                self.dismiss(animated: true)
+            }
+        }
+    }
+
+    func route(to route: SplashViewRoute) {
+        switch route {
+        case .home(let viewModel):
+            let homeViewController = HomeViewController(viewModel: viewModel)
+            let navigationController = UINavigationController(rootViewController: homeViewController)
+            guard let window = UIApplication.shared.currentKeyWindow else { return }
+            window.rootViewController = navigationController
+            UIView.transition(with: window, duration: 0.2, options: .transitionCrossDissolve, animations: nil)
         }
     }
 }

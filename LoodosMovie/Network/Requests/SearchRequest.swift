@@ -15,9 +15,11 @@ struct SearchRequest: Endpoint {
     var method: Alamofire.HTTPMethod
     var queryItems: [URLQueryItem]?
 
-    init(text: String) {
+    init(text: String, page: Int) {
         self.path = ""
-        self.queryItems = [.init(name: "s", value: text)]
+        self.queryItems = [
+            .init(name: "s", value: text),
+            .init(name: "page", value: "\(page)")]
         self.method = .get
     }
 }

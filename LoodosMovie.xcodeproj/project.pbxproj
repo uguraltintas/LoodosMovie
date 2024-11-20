@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F82162062CEE9A200075A2B0 /* SplashContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82162052CEE9A200075A2B0 /* SplashContracts.swift */; };
+		F82162082CEEA5780075A2B0 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82162072CEEA5780075A2B0 /* UIApplication+Extensions.swift */; };
+		F83004AE2CED2CB40024D4FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83004AD2CED2CB40024D4FB /* HomeViewController.swift */; };
+		F83004B02CED2CC80024D4FB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83004AF2CED2CC80024D4FB /* HomeViewModel.swift */; };
+		F83004B22CED32300024D4FB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83004B12CED32300024D4FB /* HomeCollectionViewCell.swift */; };
 		F8AC07E22CEC92C8006FBB3E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E12CEC92C8006FBB3E /* FirebaseAnalytics */; };
 		F8AC07E42CEC92C8006FBB3E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E32CEC92C8006FBB3E /* FirebaseMessaging */; };
 		F8AC07E62CEC92C8006FBB3E /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E52CEC92C8006FBB3E /* FirebaseRemoteConfig */; };
@@ -30,9 +35,16 @@
 		F8AC08A52CECECCD006FBB3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8AC08A42CECECCD006FBB3E /* GoogleService-Info.plist */; };
 		F8AC08AA2CECFB8A006FBB3E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08A92CECFB8A006FBB3E /* UIViewController+Extensions.swift */; };
 		F8AC08AD2CED0202006FBB3E /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08AC2CED0202006FBB3E /* NetworkMonitor.swift */; };
+		F8B9E7592CEDFC7900E3E073 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F8B9E7582CEDFC7900E3E073 /* Kingfisher */; };
+		F8B9E75B2CEDFE8400E3E073 /* HomeContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9E75A2CEDFE8400E3E073 /* HomeContracts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F82162052CEE9A200075A2B0 /* SplashContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashContracts.swift; sourceTree = "<group>"; };
+		F82162072CEEA5780075A2B0 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		F83004AD2CED2CB40024D4FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F83004AF2CED2CC80024D4FB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F83004B12CED32300024D4FB /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F8AC07C82CEC8F91006FBB3E /* LoodosMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AC08142CECA45C006FBB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8AC08152CECA45C006FBB3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +67,7 @@
 		F8AC08A42CECECCD006FBB3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F8AC08A92CECFB8A006FBB3E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		F8AC08AC2CED0202006FBB3E /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		F8B9E75A2CEDFE8400E3E073 /* HomeContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContracts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +79,24 @@
 				F8AC083A2CECCE09006FBB3E /* Alamofire in Frameworks */,
 				F8AC07E42CEC92C8006FBB3E /* FirebaseMessaging in Frameworks */,
 				F8AC07E22CEC92C8006FBB3E /* FirebaseAnalytics in Frameworks */,
+				F8B9E7592CEDFC7900E3E073 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F83004AC2CED2C960024D4FB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F8B9E75A2CEDFE8400E3E073 /* HomeContracts.swift */,
+				F83004AD2CED2CB40024D4FB /* HomeViewController.swift */,
+				F83004AF2CED2CC80024D4FB /* HomeViewModel.swift */,
+				F83004B12CED32300024D4FB /* HomeCollectionViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		F8AC07BF2CEC8F91006FBB3E = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +128,7 @@
 				F8AC08172CECA45C006FBB3E /* String+Extensions.swift */,
 				F8AC08A02CECE527006FBB3E /* UIView+Extensions.swift */,
 				F8AC08A92CECFB8A006FBB3E /* UIViewController+Extensions.swift */,
+				F82162072CEEA5780075A2B0 /* UIApplication+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -123,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				F8AC089D2CECDD87006FBB3E /* Splash */,
+				F83004AC2CED2C960024D4FB /* Home */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -181,6 +208,7 @@
 		F8AC089D2CECDD87006FBB3E /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				F82162052CEE9A200075A2B0 /* SplashContracts.swift */,
 				F8AC089E2CECDD99006FBB3E /* SplashViewController.swift */,
 				F8AC08A22CECE830006FBB3E /* SplashViewModel.swift */,
 			);
@@ -216,6 +244,7 @@
 				F8AC07E32CEC92C8006FBB3E /* FirebaseMessaging */,
 				F8AC07E52CEC92C8006FBB3E /* FirebaseRemoteConfig */,
 				F8AC08392CECCE09006FBB3E /* Alamofire */,
+				F8B9E7582CEDFC7900E3E073 /* Kingfisher */,
 			);
 			productName = LoodosMovie;
 			productReference = F8AC07C82CEC8F91006FBB3E /* LoodosMovie.app */;
@@ -249,6 +278,7 @@
 			packageReferences = (
 				F8AC07E02CEC92C8006FBB3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				F8AC08382CECCE09006FBB3E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F8B9E7572CEDFC7900E3E073 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F8AC07C92CEC8F91006FBB3E /* Products */;
@@ -279,17 +309,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82162062CEE9A200075A2B0 /* SplashContracts.swift in Sources */,
+				F83004B02CED2CC80024D4FB /* HomeViewModel.swift in Sources */,
 				F8AC08232CECA45C006FBB3E /* AppDelegate.swift in Sources */,
+				F8B9E75B2CEDFE8400E3E073 /* HomeContracts.swift in Sources */,
 				F8AC082F2CECA9C2006FBB3E /* APIClient.swift in Sources */,
 				F8AC08242CECA45C006FBB3E /* SceneDelegate.swift in Sources */,
 				F8AC08252CECA45C006FBB3E /* String+Extensions.swift in Sources */,
+				F83004B22CED32300024D4FB /* HomeCollectionViewCell.swift in Sources */,
 				F8AC08262CECA45C006FBB3E /* NetworkError.swift in Sources */,
 				F8AC08332CECBE88006FBB3E /* Base.swift in Sources */,
 				F8AC08A12CECE527006FBB3E /* UIView+Extensions.swift in Sources */,
 				F8AC08AD2CED0202006FBB3E /* NetworkMonitor.swift in Sources */,
 				F8AC083C2CECCFEF006FBB3E /* SearchResponse.swift in Sources */,
 				F8AC08A32CECE830006FBB3E /* SplashViewModel.swift in Sources */,
+				F82162082CEEA5780075A2B0 /* UIApplication+Extensions.swift in Sources */,
 				F8AC082B2CECA4EA006FBB3E /* Endpoint.swift in Sources */,
+				F83004AE2CED2CB40024D4FB /* HomeViewController.swift in Sources */,
 				F8AC08AA2CECFB8A006FBB3E /* UIViewController+Extensions.swift in Sources */,
 				F8AC08372CECCC45006FBB3E /* SearchRequest.swift in Sources */,
 				F8AC08352CECC995006FBB3E /* ErrorResponse.swift in Sources */,
@@ -535,6 +571,14 @@
 				minimumVersion = 5.10.1;
 			};
 		};
+		F8B9E7572CEDFC7900E3E073 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -557,6 +601,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F8AC08382CECCE09006FBB3E /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		F8B9E7582CEDFC7900E3E073 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8B9E7572CEDFC7900E3E073 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

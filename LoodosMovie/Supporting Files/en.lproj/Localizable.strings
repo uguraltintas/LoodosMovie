@@ -19,3 +19,9 @@
 
 // Mark: Alert
 "retry" = "Retry";
+
+// Mark: Home
+"search_movies_placeholder" = "Search Movies";
+"search_placeholder_message" = "Search for your favorite movies or discover new ones!";
+"no_results_message" = "No results found. Try searching for something else!";
+"home" = "Home";

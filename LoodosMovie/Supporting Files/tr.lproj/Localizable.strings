@@ -19,3 +19,9 @@
 
 // Mark: Alert
 "retry" = "Tekrar Dene";
+
+// Mark: Home
+"search_movies_placeholder" = "Film Ara";
+"search_placeholder_message" = "Favori filmlerinizi arayın veya yenilerini keşfedin!";
+"no_results_message" = "Aradığınız sonuç bulunamadı. Başka bir şey aramayı deneyin!";
+"home" = "Ana Sayfa";
