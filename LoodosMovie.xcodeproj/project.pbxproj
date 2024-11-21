@@ -37,6 +37,7 @@
 		F8AC08AD2CED0202006FBB3E /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08AC2CED0202006FBB3E /* NetworkMonitor.swift */; };
 		F8B9E7592CEDFC7900E3E073 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F8B9E7582CEDFC7900E3E073 /* Kingfisher */; };
 		F8B9E75B2CEDFE8400E3E073 /* HomeContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9E75A2CEDFE8400E3E073 /* HomeContracts.swift */; };
+		F8CBB7AB2CEEB09100F48ABF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CBB7AA2CEEB09100F48ABF /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		F8AC08A92CECFB8A006FBB3E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		F8AC08AC2CED0202006FBB3E /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		F8B9E75A2CEDFE8400E3E073 /* HomeContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContracts.swift; sourceTree = "<group>"; };
+		F8CBB7AA2CEEB09100F48ABF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				F8AC081A2CECA45C006FBB3E /* Network */,
 				F8AC08AB2CED01EE006FBB3E /* Helpers */,
 				F8AC08182CECA45C006FBB3E /* Extensions */,
+				F8CBB7A52CEEAB6800F48ABF /* Views */,
 				F8AC081B2CECA45C006FBB3E /* Scenes */,
 				F8AC08212CECA45C006FBB3E /* Supporting Files */,
 			);
@@ -221,6 +224,14 @@
 				F8AC08AC2CED0202006FBB3E /* NetworkMonitor.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F8CBB7A52CEEAB6800F48ABF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8CBB7AA2CEEB09100F48ABF /* LoadingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +339,7 @@
 				F83004AE2CED2CB40024D4FB /* HomeViewController.swift in Sources */,
 				F8AC08AA2CECFB8A006FBB3E /* UIViewController+Extensions.swift in Sources */,
 				F8AC08372CECCC45006FBB3E /* SearchRequest.swift in Sources */,
+				F8CBB7AB2CEEB09100F48ABF /* LoadingView.swift in Sources */,
 				F8AC08352CECC995006FBB3E /* ErrorResponse.swift in Sources */,
 				F8AC089F2CECDD99006FBB3E /* SplashViewController.swift in Sources */,
 			);

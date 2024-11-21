@@ -210,7 +210,14 @@ extension HomeViewController: UISearchResultsUpdating {
 extension HomeViewController: HomeViewModelDelegate {
     func handleViewModelOutput(_ output: HomeViewModelOutput) {
         switch output {
-        case .setLoading(let isLoading): break
+        case .setLoading(let isLoading):
+            DispatchQueue.main.async { [self] in
+                if !isLoading {
+                    dismissLoading()
+                    return
+                }
+                showLoading()
+            }
         case .showMovies:
             if viewModel.movies.isEmpty {
                 viewState = .noResults

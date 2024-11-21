@@ -28,6 +28,7 @@ final class HomeViewModel: HomeViewModelProtocol {
     func fetchMovies(text: String) {
         Task {
             do {
+                notify(.setLoading(true))
                 let request = SearchRequest(text: text, page: currentPage)
                 let result = try await apiClient.send(request)
                 guard let totalResults = Int(result.totalResults) else { return }
@@ -38,11 +39,13 @@ final class HomeViewModel: HomeViewModelProtocol {
                 let filteredMovies = result.search.filter { !$0.poster.elementsEqual("N/A") }
                 movies.append(contentsOf: filteredMovies)
                 currentPage += 1
+
                 notify(.showMovies)
             } catch {
                 notify(.showMovies)
                 debugPrint(error)
             }
+            notify(.setLoading(false))
         }
     }
 

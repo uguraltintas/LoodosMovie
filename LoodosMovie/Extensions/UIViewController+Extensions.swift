@@ -20,13 +20,16 @@ extension UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
 
-    func hideKeyboardWhenTappedAround() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
+    private static var loadingViewTag: Int { return 999999 }
+
+    func showLoading() {
+        if let _ = view.viewWithTag(UIViewController.loadingViewTag) { return }
+        let loadingView = LoadingView(frame: view.bounds)
+        loadingView.tag = UIViewController.loadingViewTag
+        view.addSubview(loadingView)
     }
 
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
+    func dismissLoading() {
+        view.viewWithTag(UIViewController.loadingViewTag)?.removeFromSuperview()
     }
 }
