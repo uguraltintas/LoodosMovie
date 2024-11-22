@@ -29,6 +29,8 @@ final class DetailViewModel: DetailViewModelProtocol {
                 let request = GetMovieRequest(id: id)
                 movie = try await apiClient.send(request)
                 notify(.showMovie)
+                guard let movie else { return }
+                AnalyticsManager.shared.logEvent(DetailScreenEvents.viewedDetailScreen(movie: movie))
             } catch {
                 debugPrint(error)
             }
