@@ -32,8 +32,8 @@ class HomeCollectionViewCell: UICollectionViewCell {
 
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        label.textColor = .black
+        label.font = .systemFont(ofSize: 16, weight: .bold)
+        label.textColor = .white
         label.textAlignment = .center
         label.numberOfLines = 0
         return label

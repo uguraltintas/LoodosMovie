@@ -18,7 +18,9 @@ class HomeViewController: UIViewController {
         searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "search_movies_placeholder".localized
+        searchController.searchBar.tintColor = .white
+        searchController.searchBar.searchTextField.leftView?.tintColor = .text
+        searchController.searchBar.searchTextField.attributedPlaceholder = NSAttributedString(string: "search_movies_placeholder".localized, attributes: [.foregroundColor: UIColor.text])
         return searchController
     }()
 
@@ -26,11 +28,11 @@ class HomeViewController: UIViewController {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = 16
-        layout.minimumInteritemSpacing = 16
+        layout.minimumInteritemSpacing = 8
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: HomeCollectionViewCell.identifier)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .background
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.keyboardDismissMode = .interactive
@@ -41,13 +43,13 @@ class HomeViewController: UIViewController {
         let imageView = UIImageView()
         imageView.image = UIImage(systemName: "magnifyingglass.circle.fill")
         imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = .lightGray
+        imageView.tintColor = .white
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.setDimensions(width: 100, height: 100)
 
         let label = UILabel()
         label.text = "search_placeholder_message".localized
-        label.textColor = .gray
+        label.textColor = .text
         label.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -65,13 +67,13 @@ class HomeViewController: UIViewController {
         let imageView = UIImageView()
         imageView.image = UIImage(systemName: "text.page.badge.magnifyingglass")
         imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = .lightGray
+        imageView.tintColor = .white
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.setDimensions(width: 100, height: 100)
 
         let label = UILabel()
         label.text = "no_results_message".localized
-        label.textColor = .gray
+        label.textColor = .text
         label.font = UIFont.systemFont(ofSize: 16, weight: .medium)
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -117,7 +119,7 @@ class HomeViewController: UIViewController {
     }
 
     private func setupUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = .background
         view.addSubview(movieCollectionView)
         view.addSubview(emptyStateView)
         view.addSubview(noResultsView)
@@ -127,6 +129,7 @@ class HomeViewController: UIViewController {
                                    leading: view.leadingAnchor,
                                    bottom: view.safeAreaLayoutGuide.bottomAnchor,
                                    trailing: view.trailingAnchor,
+                                   paddingTop: 12,
                                    paddingLeading: 24,
                                    paddingTrailing: 24)
         emptyStateView.center(inView: self.view)
@@ -168,7 +171,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let numberOfItemsPerRow: CGFloat = 2
-        let spacingBetweenCells: CGFloat = 16
+        let spacingBetweenCells: CGFloat = 8
         let totalSpacing = (2 * spacingBetweenCells) + ((numberOfItemsPerRow - 1) * spacingBetweenCells)
         let width = (collectionView.bounds.width - totalSpacing) / numberOfItemsPerRow
         return CGSize(width: width, height: 270)

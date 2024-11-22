@@ -31,6 +31,7 @@ class SplashViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         viewModel.delegate = self
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     override func viewDidAppear(_ animated: Bool) {
