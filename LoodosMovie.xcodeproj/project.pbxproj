@@ -12,6 +12,7 @@
 		F83004AE2CED2CB40024D4FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83004AD2CED2CB40024D4FB /* HomeViewController.swift */; };
 		F83004B02CED2CC80024D4FB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83004AF2CED2CC80024D4FB /* HomeViewModel.swift */; };
 		F83004B22CED32300024D4FB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83004B12CED32300024D4FB /* HomeCollectionViewCell.swift */; };
+		F8857FEB2CF0A19200E1A01F /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8857FEA2CF0A19200E1A01F /* UIStackView+Extensions.swift */; };
 		F8AC07E22CEC92C8006FBB3E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E12CEC92C8006FBB3E /* FirebaseAnalytics */; };
 		F8AC07E42CEC92C8006FBB3E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E32CEC92C8006FBB3E /* FirebaseMessaging */; };
 		F8AC07E62CEC92C8006FBB3E /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E52CEC92C8006FBB3E /* FirebaseRemoteConfig */; };
@@ -35,6 +36,18 @@
 		F8AC08A52CECECCD006FBB3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8AC08A42CECECCD006FBB3E /* GoogleService-Info.plist */; };
 		F8AC08AA2CECFB8A006FBB3E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08A92CECFB8A006FBB3E /* UIViewController+Extensions.swift */; };
 		F8AC08AD2CED0202006FBB3E /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC08AC2CED0202006FBB3E /* NetworkMonitor.swift */; };
+		F8B63AF32CEF575A003B94B3 /* DetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B63AF22CEF575A003B94B3 /* DetailContracts.swift */; };
+		F8B63AF52CEF58A3003B94B3 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B63AF42CEF58A3003B94B3 /* DetailViewModel.swift */; };
+		F8B63AF72CEF58AE003B94B3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B63AF62CEF58AE003B94B3 /* DetailViewController.swift */; };
+		F8B63AF92CEF5A2C003B94B3 /* GetMovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B63AF82CEF5A2C003B94B3 /* GetMovieRequest.swift */; };
+		F8B63AFB2CEF5AFA003B94B3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B63AFA2CEF5AFA003B94B3 /* Movie.swift */; };
+		F8B63AFD2CEF9D67003B94B3 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B63AFC2CEF9D67003B94B3 /* CustomBackButton.swift */; };
+		F8B63AFF2CEFAEF0003B94B3 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B63AFE2CEFAEF0003B94B3 /* AnalyticsManager.swift */; };
+		F8B63B012CEFAEF6003B94B3 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B63B002CEFAEF6003B94B3 /* Configuration.swift */; };
+		F8B63B032CEFAEFB003B94B3 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B63B022CEFAEFB003B94B3 /* Event.swift */; };
+		F8B63B052CEFAEFF003B94B3 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B63B042CEFAEFF003B94B3 /* Provider.swift */; };
+		F8B63B092CEFAFCA003B94B3 /* DetailScreenEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B63B082CEFAFCA003B94B3 /* DetailScreenEvents.swift */; };
+		F8B63B0B2CEFD842003B94B3 /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B63B0A2CEFD842003B94B3 /* Encodable+Extensions.swift */; };
 		F8B9E7592CEDFC7900E3E073 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F8B9E7582CEDFC7900E3E073 /* Kingfisher */; };
 		F8B9E75B2CEDFE8400E3E073 /* HomeContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B9E75A2CEDFE8400E3E073 /* HomeContracts.swift */; };
 		F8CBB7AB2CEEB09100F48ABF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CBB7AA2CEEB09100F48ABF /* LoadingView.swift */; };
@@ -46,6 +59,7 @@
 		F83004AD2CED2CB40024D4FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F83004AF2CED2CC80024D4FB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F83004B12CED32300024D4FB /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		F8857FEA2CF0A19200E1A01F /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 		F8AC07C82CEC8F91006FBB3E /* LoodosMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AC08142CECA45C006FBB3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8AC08152CECA45C006FBB3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +82,19 @@
 		F8AC08A42CECECCD006FBB3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F8AC08A92CECFB8A006FBB3E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		F8AC08AC2CED0202006FBB3E /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		F8B63AF22CEF575A003B94B3 /* DetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContracts.swift; sourceTree = "<group>"; };
+		F8B63AF42CEF58A3003B94B3 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		F8B63AF62CEF58AE003B94B3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F8B63AF82CEF5A2C003B94B3 /* GetMovieRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMovieRequest.swift; sourceTree = "<group>"; };
+		F8B63AFA2CEF5AFA003B94B3 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F8B63AFC2CEF9D67003B94B3 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		F8B63AFE2CEFAEF0003B94B3 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		F8B63B002CEFAEF6003B94B3 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		F8B63B022CEFAEFB003B94B3 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		F8B63B042CEFAEFF003B94B3 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		F8B63B082CEFAFCA003B94B3 /* DetailScreenEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenEvents.swift; sourceTree = "<group>"; };
+		F8B63B0A2CEFD842003B94B3 /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
+		F8B63B0C2CEFDE60003B94B3 /* LoodosMovie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LoodosMovie.entitlements; sourceTree = "<group>"; };
 		F8B9E75A2CEDFE8400E3E073 /* HomeContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContracts.swift; sourceTree = "<group>"; };
 		F8CBB7AA2CEEB09100F48ABF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +158,8 @@
 				F8AC08A02CECE527006FBB3E /* UIView+Extensions.swift */,
 				F8AC08A92CECFB8A006FBB3E /* UIViewController+Extensions.swift */,
 				F82162072CEEA5780075A2B0 /* UIApplication+Extensions.swift */,
+				F8B63B0A2CEFD842003B94B3 /* Encodable+Extensions.swift */,
+				F8857FEA2CF0A19200E1A01F /* UIStackView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -152,6 +181,7 @@
 			children = (
 				F8AC089D2CECDD87006FBB3E /* Splash */,
 				F83004AC2CED2C960024D4FB /* Home */,
+				F8B63AF12CEF5747003B94B3 /* Detail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -170,9 +200,11 @@
 		F8AC08222CECA45C006FBB3E /* LoodosMovie */ = {
 			isa = PBXGroup;
 			children = (
+				F8B63B0C2CEFDE60003B94B3 /* LoodosMovie.entitlements */,
 				F8AC08162CECA45C006FBB3E /* Application */,
 				F8AC086A2CECD565006FBB3E /* Secrets */,
 				F8AC081A2CECA45C006FBB3E /* Network */,
+				F8B63B062CEFAF05003B94B3 /* Analytics */,
 				F8AC08AB2CED01EE006FBB3E /* Helpers */,
 				F8AC08182CECA45C006FBB3E /* Extensions */,
 				F8CBB7A52CEEAB6800F48ABF /* Views */,
@@ -188,6 +220,7 @@
 				F8AC08322CECBE88006FBB3E /* Base.swift */,
 				F8AC08342CECC995006FBB3E /* ErrorResponse.swift */,
 				F8AC083B2CECCFEF006FBB3E /* SearchResponse.swift */,
+				F8B63AFA2CEF5AFA003B94B3 /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				F8AC08362CECCC45006FBB3E /* SearchRequest.swift */,
+				F8B63AF82CEF5A2C003B94B3 /* GetMovieRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -226,9 +260,40 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		F8B63AF12CEF5747003B94B3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F8B63AF22CEF575A003B94B3 /* DetailContracts.swift */,
+				F8B63AF62CEF58AE003B94B3 /* DetailViewController.swift */,
+				F8B63AF42CEF58A3003B94B3 /* DetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		F8B63B062CEFAF05003B94B3 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				F8B63B072CEFAFC4003B94B3 /* Events */,
+				F8B63B042CEFAEFF003B94B3 /* Provider.swift */,
+				F8B63B022CEFAEFB003B94B3 /* Event.swift */,
+				F8B63B002CEFAEF6003B94B3 /* Configuration.swift */,
+				F8B63AFE2CEFAEF0003B94B3 /* AnalyticsManager.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		F8B63B072CEFAFC4003B94B3 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				F8B63B082CEFAFCA003B94B3 /* DetailScreenEvents.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
 		F8CBB7A52CEEAB6800F48ABF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F8B63AFC2CEF9D67003B94B3 /* CustomBackButton.swift */,
 				F8CBB7AA2CEEB09100F48ABF /* LoadingView.swift */,
 			);
 			path = Views;
@@ -322,26 +387,39 @@
 			files = (
 				F82162062CEE9A200075A2B0 /* SplashContracts.swift in Sources */,
 				F83004B02CED2CC80024D4FB /* HomeViewModel.swift in Sources */,
+				F8B63AF72CEF58AE003B94B3 /* DetailViewController.swift in Sources */,
 				F8AC08232CECA45C006FBB3E /* AppDelegate.swift in Sources */,
 				F8B9E75B2CEDFE8400E3E073 /* HomeContracts.swift in Sources */,
 				F8AC082F2CECA9C2006FBB3E /* APIClient.swift in Sources */,
+				F8B63B012CEFAEF6003B94B3 /* Configuration.swift in Sources */,
 				F8AC08242CECA45C006FBB3E /* SceneDelegate.swift in Sources */,
 				F8AC08252CECA45C006FBB3E /* String+Extensions.swift in Sources */,
+				F8B63AF52CEF58A3003B94B3 /* DetailViewModel.swift in Sources */,
 				F83004B22CED32300024D4FB /* HomeCollectionViewCell.swift in Sources */,
 				F8AC08262CECA45C006FBB3E /* NetworkError.swift in Sources */,
+				F8B63B092CEFAFCA003B94B3 /* DetailScreenEvents.swift in Sources */,
+				F8B63AFB2CEF5AFA003B94B3 /* Movie.swift in Sources */,
+				F8B63B032CEFAEFB003B94B3 /* Event.swift in Sources */,
 				F8AC08332CECBE88006FBB3E /* Base.swift in Sources */,
 				F8AC08A12CECE527006FBB3E /* UIView+Extensions.swift in Sources */,
 				F8AC08AD2CED0202006FBB3E /* NetworkMonitor.swift in Sources */,
 				F8AC083C2CECCFEF006FBB3E /* SearchResponse.swift in Sources */,
 				F8AC08A32CECE830006FBB3E /* SplashViewModel.swift in Sources */,
 				F82162082CEEA5780075A2B0 /* UIApplication+Extensions.swift in Sources */,
+				F8B63B052CEFAEFF003B94B3 /* Provider.swift in Sources */,
+				F8B63AFF2CEFAEF0003B94B3 /* AnalyticsManager.swift in Sources */,
 				F8AC082B2CECA4EA006FBB3E /* Endpoint.swift in Sources */,
 				F83004AE2CED2CB40024D4FB /* HomeViewController.swift in Sources */,
+				F8B63AF92CEF5A2C003B94B3 /* GetMovieRequest.swift in Sources */,
 				F8AC08AA2CECFB8A006FBB3E /* UIViewController+Extensions.swift in Sources */,
 				F8AC08372CECCC45006FBB3E /* SearchRequest.swift in Sources */,
+				F8B63AF32CEF575A003B94B3 /* DetailContracts.swift in Sources */,
 				F8CBB7AB2CEEB09100F48ABF /* LoadingView.swift in Sources */,
+				F8B63AFD2CEF9D67003B94B3 /* CustomBackButton.swift in Sources */,
 				F8AC08352CECC995006FBB3E /* ErrorResponse.swift in Sources */,
+				F8857FEB2CF0A19200E1A01F /* UIStackView+Extensions.swift in Sources */,
 				F8AC089F2CECDD99006FBB3E /* SplashViewController.swift in Sources */,
+				F8B63B0B2CEFD842003B94B3 /* Encodable+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LoodosMovie/LoodosMovie.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A5777VBC8M;
@@ -376,6 +455,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -397,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LoodosMovie/LoodosMovie.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A5777VBC8M;
@@ -407,6 +488,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

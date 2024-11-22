@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = 16
-        layout.minimumInteritemSpacing = 8
+        layout.minimumInteritemSpacing = 16
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: HomeCollectionViewCell.identifier)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
@@ -123,8 +123,8 @@ class HomeViewController: UIViewController {
                                    leading: view.leadingAnchor,
                                    bottom: view.safeAreaLayoutGuide.bottomAnchor,
                                    trailing: view.trailingAnchor,
-                                   paddingLeading: 12,
-                                   paddingTrailing: 12)
+                                   paddingLeading: 24,
+                                   paddingTrailing: 24)
         emptyStateView.center(inView: self.view)
         emptyStateView.anchor(leading: view.leadingAnchor,
                               trailing: view.trailingAnchor,
@@ -164,10 +164,10 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let numberOfItemsPerRow: CGFloat = 2
-        let spacingBetweenCells: CGFloat = 8
+        let spacingBetweenCells: CGFloat = 16
         let totalSpacing = (2 * spacingBetweenCells) + ((numberOfItemsPerRow - 1) * spacingBetweenCells)
         let width = (collectionView.bounds.width - totalSpacing) / numberOfItemsPerRow
-        return CGSize(width: width, height: 300)
+        return CGSize(width: width, height: 270)
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -184,7 +184,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
 
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.row == viewModel.movies.count - 4 {
+        if indexPath.row == viewModel.movies.count - 2 && viewModel.hasMoreMovies {
             guard let text = searchController.searchBar.text else { return }
             viewModel.fetchMovies(text: text)
         }
@@ -231,6 +231,10 @@ extension HomeViewController: HomeViewModelDelegate {
     }
 
     func route(to route: HomeViewRoute) {
-        // TODO: handle route
+        switch route {
+        case .detail(let viewModel):
+            let viewController = DetailViewController(viewModel: viewModel)
+            navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 }

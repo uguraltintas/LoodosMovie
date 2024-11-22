@@ -10,6 +10,7 @@ import Foundation
 protocol HomeViewModelProtocol{
     var delegate: HomeViewModelDelegate? { get set }
     var movies: [SearchMovieResult] { get }
+    var hasMoreMovies: Bool { get }
     func fetchMovies(text: String)
     func selectedItem(at index: Int)
     func clearData()
@@ -21,7 +22,7 @@ protocol HomeViewModelDelegate: AnyObject {
 }
 
 enum HomeViewRoute {
-    case detail
+    case detail(DetailViewModelProtocol)
 }
 
 enum HomeViewModelOutput {

@@ -25,7 +25,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
         imageView.contentMode = .scaleToFill
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.anchor(height: 250)
+        imageView.anchor(height: 220)
         imageView.layer.cornerRadius = 12
         return imageView
     }()

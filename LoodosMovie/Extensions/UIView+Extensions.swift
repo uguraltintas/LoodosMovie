@@ -66,4 +66,29 @@ extension UIView {
         anchor(top: view.topAnchor, leading: view.leadingAnchor,
                bottom: view.bottomAnchor, trailing: view.trailingAnchor)
     }
+
+    func addCustomBackButton(icon: UIImage = UIImage(systemName: "chevron.left")!,
+                             backgroundColor: UIColor = UIColor.black.withAlphaComponent(0.6),
+                             size: CGFloat = 40,
+                             position: CGPoint = CGPoint(x: 30, y: 50),
+                             action: @escaping () -> Void) {
+
+        let button = CustomBackButton(icon: icon, backgroundColor: backgroundColor, size: size)
+        self.addSubview(button)
+        button.anchor(top: self.safeAreaLayoutGuide.topAnchor, leading: self.leadingAnchor, paddingLeading: 8)
+        button.addAction(UIAction { _ in action() }, for: .touchUpInside)
+    }
+
+    func addGradient(colors: [UIColor], locations: [NSNumber]? = nil) {
+        self.layer.sublayers?.filter { $0 is CAGradientLayer }.forEach { $0.removeFromSuperlayer() }
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = colors.map { $0.cgColor }
+        gradientLayer.locations = locations
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
+        gradientLayer.frame = self.bounds
+        self.layer.insertSublayer(gradientLayer, at: 0)
+        self.setNeedsLayout()
+        self.layoutIfNeeded()
+    }
 }

@@ -13,6 +13,7 @@ final class HomeViewModel: HomeViewModelProtocol {
     var movies: [SearchMovieResult] = []
     var currentPage = 1
     private var apiClient: APIClientProtocol
+    var hasMoreMovies = true
 
     init(apiClient: APIClientProtocol) {
         self.apiClient = apiClient
@@ -32,14 +33,13 @@ final class HomeViewModel: HomeViewModelProtocol {
                 let request = SearchRequest(text: text, page: currentPage)
                 let result = try await apiClient.send(request)
                 guard let totalResults = Int(result.totalResults) else { return }
-                if !(totalResults > allMovies.count) {
-                    return
-                }
                 allMovies.append(contentsOf: result.search)
                 let filteredMovies = result.search.filter { !$0.poster.elementsEqual("N/A") }
                 movies.append(contentsOf: filteredMovies)
+                if !(totalResults > allMovies.count) {
+                    hasMoreMovies = false
+                }
                 currentPage += 1
-
                 notify(.showMovies)
             } catch {
                 notify(.showMovies)
@@ -50,7 +50,8 @@ final class HomeViewModel: HomeViewModelProtocol {
     }
 
     func selectedItem(at index: Int) {
-        delegate?.route(to: .detail)
+        let viewModel = DetailViewModel(id: movies[index].imdbID, apiClient: apiClient)
+        delegate?.route(to: .detail(viewModel))
     }
 
     private func notify(_ output: HomeViewModelOutput) {

@@ -33,9 +33,11 @@ final class APIClient: APIClientProtocol {
                             continuation.resume(returning: value)
 
                         case .failure(let afError):
-                            let networkError = self.mapAlamofireError(afError,
-                                                                      data: response.data,
-                                                                      response: response.response)
+                            let networkError = self.mapAlamofireError(
+                                afError,
+                                data: response.data,
+                                response: response.response
+                            )
                             continuation.resume(throwing: networkError)
                         }
                     }
