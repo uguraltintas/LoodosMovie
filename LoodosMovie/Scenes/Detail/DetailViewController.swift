@@ -76,7 +76,7 @@ class DetailViewController: UIViewController {
         label.font = .systemFont(ofSize: 17, weight: .medium)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Release Date"
+        label.text = "release_date".localized
         return label
     }()
 
@@ -101,7 +101,7 @@ class DetailViewController: UIViewController {
         label.font = .systemFont(ofSize: 17, weight: .medium)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Genre"
+        label.text = "genre".localized
         return label
     }()
 
@@ -137,7 +137,7 @@ class DetailViewController: UIViewController {
         label.font = .systemFont(ofSize: 17, weight: .medium)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Overview"
+        label.text = "overview".localized
         return label
     }()
 
@@ -164,7 +164,7 @@ class DetailViewController: UIViewController {
         label.font = .systemFont(ofSize: 17, weight: .medium)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Writer"
+        label.text = "writer".localized
         return label
     }()
 
@@ -191,7 +191,7 @@ class DetailViewController: UIViewController {
         label.font = .systemFont(ofSize: 17, weight: .medium)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Actors"
+        label.text = "actors".localized
         return label
     }()
 

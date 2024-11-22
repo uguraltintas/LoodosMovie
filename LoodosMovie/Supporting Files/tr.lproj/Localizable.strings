@@ -25,3 +25,10 @@
 "search_placeholder_message" = "Favori filmlerinizi arayın veya yenilerini keşfedin!";
 "no_results_message" = "Aradığınız sonuç bulunamadı. Başka bir şey aramayı deneyin!";
 "home" = "Ana Sayfa";
+
+// Mark: Detail
+"release_date" = "Çıkış Tarihi";
+"genre" = "Tür";
+"overview" = "Özet";
+"writer" = "Yazar";
+"actors" = "Oyuncular";

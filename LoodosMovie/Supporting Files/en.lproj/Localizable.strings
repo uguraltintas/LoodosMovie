@@ -25,3 +25,10 @@
 "search_placeholder_message" = "Search for your favorite movies or discover new ones!";
 "no_results_message" = "No results found. Try searching for something else!";
 "home" = "Home";
+
+// Mark: Detail
+"release_date" = "Release Date";
+"genre" = "Genre";
+"overview" = "Overview";
+"writer" = "Writer";
+"actors" = "Actors";
