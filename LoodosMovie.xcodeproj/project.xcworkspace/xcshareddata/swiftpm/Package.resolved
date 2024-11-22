@@ -1,5 +1,5 @@
 {
-  "originHash" : "da8aba19ad30308e583600028276adf7800e14421ab5ada124b1c0b89b38f96a",
+  "originHash" : "e070a037d47b01571bec24e3bbbbf7add88e444147ffe3bc6964d4c869a8f04c",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -80,6 +80,15 @@
       "state" : {
         "revision" : "5cfe5f090c982de9c58605d2a82a4fc77b774fbd",
         "version" : "4.1.0"
+      }
+    },
+    {
+      "identity" : "hero",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/HeroTransitions/Hero.git",
+      "state" : {
+        "revision" : "b307e2d48d582118e5101d04f5187c91595a1095",
+        "version" : "1.6.3"
       }
     },
     {

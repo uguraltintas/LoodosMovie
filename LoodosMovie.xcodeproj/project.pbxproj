@@ -13,6 +13,7 @@
 		F83004B02CED2CC80024D4FB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83004AF2CED2CC80024D4FB /* HomeViewModel.swift */; };
 		F83004B22CED32300024D4FB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83004B12CED32300024D4FB /* HomeCollectionViewCell.swift */; };
 		F8857FEB2CF0A19200E1A01F /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8857FEA2CF0A19200E1A01F /* UIStackView+Extensions.swift */; };
+		F8857FF02CF0C5DF00E1A01F /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = F8857FEF2CF0C5DF00E1A01F /* Hero */; };
 		F8AC07E22CEC92C8006FBB3E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E12CEC92C8006FBB3E /* FirebaseAnalytics */; };
 		F8AC07E42CEC92C8006FBB3E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E32CEC92C8006FBB3E /* FirebaseMessaging */; };
 		F8AC07E62CEC92C8006FBB3E /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = F8AC07E52CEC92C8006FBB3E /* FirebaseRemoteConfig */; };
@@ -108,6 +109,7 @@
 				F8AC083A2CECCE09006FBB3E /* Alamofire in Frameworks */,
 				F8AC07E42CEC92C8006FBB3E /* FirebaseMessaging in Frameworks */,
 				F8AC07E22CEC92C8006FBB3E /* FirebaseAnalytics in Frameworks */,
+				F8857FF02CF0C5DF00E1A01F /* Hero in Frameworks */,
 				F8B9E7592CEDFC7900E3E073 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +323,7 @@
 				F8AC07E52CEC92C8006FBB3E /* FirebaseRemoteConfig */,
 				F8AC08392CECCE09006FBB3E /* Alamofire */,
 				F8B9E7582CEDFC7900E3E073 /* Kingfisher */,
+				F8857FEF2CF0C5DF00E1A01F /* Hero */,
 			);
 			productName = LoodosMovie;
 			productReference = F8AC07C82CEC8F91006FBB3E /* LoodosMovie.app */;
@@ -355,6 +358,7 @@
 				F8AC07E02CEC92C8006FBB3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				F8AC08382CECCE09006FBB3E /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F8B9E7572CEDFC7900E3E073 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				F8857FEE2CF0C5DF00E1A01F /* XCRemoteSwiftPackageReference "Hero" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F8AC07C92CEC8F91006FBB3E /* Products */;
@@ -651,6 +655,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F8857FEE2CF0C5DF00E1A01F /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.3;
+			};
+		};
 		F8AC07E02CEC92C8006FBB3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -678,6 +690,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F8857FEF2CF0C5DF00E1A01F /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8857FEE2CF0C5DF00E1A01F /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
 		F8AC07E12CEC92C8006FBB3E /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F8AC07E02CEC92C8006FBB3E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

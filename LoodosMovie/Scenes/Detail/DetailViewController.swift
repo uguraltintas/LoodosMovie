@@ -314,6 +314,7 @@ class DetailViewController: UIViewController {
                           leading: view.leadingAnchor,
                           bottom: view.bottomAnchor,
                           trailing: view.trailingAnchor)
+        scrollView.showsVerticalScrollIndicator = false
         scrollViewContainer.anchor(top: scrollView.topAnchor,
                                    leading: scrollView.leadingAnchor,
                                    bottom: scrollView.bottomAnchor,
@@ -336,7 +337,7 @@ class DetailViewController: UIViewController {
 
 
         view.addCustomBackButton {
-            self.navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true)
         }
     }
 }
@@ -369,6 +370,7 @@ extension DetailViewController: DetailViewModelDelegate {
                   let url = URL(string: movie.poster) else { return }
             DispatchQueue.main.async { [self] in
                 imageView.kf.setImage(with: url)
+                imageView.hero.id = "\(viewModel.id)"
                 titleLabel.text = movie.title
                 movieInformationStackView.addArrangedSubview(labelWithImage(UIImage(systemName: "clock") ?? UIImage(), text: movie.runtime))
                 movieInformationStackView.addArrangedSubview(labelWithImage(UIImage(systemName: "star.fill") ?? UIImage(), text: movie.imdbRating))

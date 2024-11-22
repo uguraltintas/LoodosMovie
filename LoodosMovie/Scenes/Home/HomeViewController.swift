@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Hero
 
 fileprivate enum ViewState {
     case emptyState
@@ -107,6 +108,8 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.hero.isEnabled = true
+        hero.isEnabled = true
         setupUI()
         viewModel.delegate = self
         movieCollectionView.isHidden = true
@@ -127,11 +130,12 @@ class HomeViewController: UIViewController {
         navigationItem.hidesSearchBarWhenScrolling = false
         movieCollectionView.anchor(top: view.safeAreaLayoutGuide.topAnchor,
                                    leading: view.leadingAnchor,
-                                   bottom: view.safeAreaLayoutGuide.bottomAnchor,
+                                   bottom: view.bottomAnchor,
                                    trailing: view.trailingAnchor,
                                    paddingTop: 12,
                                    paddingLeading: 24,
                                    paddingTrailing: 24)
+        movieCollectionView.showsVerticalScrollIndicator = false
         emptyStateView.center(inView: self.view)
         emptyStateView.anchor(leading: view.leadingAnchor,
                               trailing: view.trailingAnchor,
@@ -241,7 +245,10 @@ extension HomeViewController: HomeViewModelDelegate {
         switch route {
         case .detail(let viewModel):
             let viewController = DetailViewController(viewModel: viewModel)
-            navigationController?.pushViewController(viewController, animated: true)
+            viewController.hero.isEnabled = true
+            viewController.hero.modalAnimationType = .zoom
+            viewController.modalPresentationStyle = .fullScreen
+            navigationController?.present(viewController, animated: true)
         }
     }
 }

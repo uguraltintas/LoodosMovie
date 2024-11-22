@@ -56,6 +56,7 @@ class HomeCollectionViewCell: UICollectionViewCell {
     func configure(movie: SearchMovieResult) {
         guard let url = URL(string: movie.poster) else { return }
         imageView.kf.setImage(with: url)
+        imageView.hero.id = movie.imdbID
         titleLabel.text = movie.title
     }
 }
