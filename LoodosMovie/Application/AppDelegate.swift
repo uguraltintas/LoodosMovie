@@ -8,11 +8,14 @@
 import UIKit
 import Firebase
 import FirebaseRemoteConfig
+import FirebaseMessaging
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupFirebase()
+        Messaging.messaging().delegate = self
+        UNUserNotificationCenter.current().delegate = self
         return true
     }
 
@@ -45,5 +48,11 @@ extension AppDelegate {
                 debugPrint("Remote config fetched and activated: \(status == .successFetchedFromRemote)")
             }
         }
+    }
+}
+
+extension AppDelegate: MessagingDelegate, UNUserNotificationCenterDelegate {
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        Messaging.messaging().apnsToken = deviceToken
     }
 }

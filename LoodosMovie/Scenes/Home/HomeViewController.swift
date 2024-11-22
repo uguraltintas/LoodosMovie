@@ -110,6 +110,10 @@ class HomeViewController: UIViewController {
         movieCollectionView.isHidden = true
         noResultsView.isHidden = true
         title = "home".localized
+        let options: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(options: options,
+                                                                completionHandler: { _, _ in })
+        UIApplication.shared.registerForRemoteNotifications()
     }
 
     private func setupUI() {
